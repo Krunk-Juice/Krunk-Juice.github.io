@@ -172,9 +172,9 @@ body {
 }
 
 h1 {
-    font-family: 'Bitter', serif;
+    font-family: 'Lora', serif;
     margin: 6rem 0rem 5rem 0rem;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 h2 {
@@ -187,7 +187,7 @@ h3 {
 }
 
 p {
-    font-family: 'Bitter', serif;
+    font-family: 'Lora', serif;
     color: #EAF6F6;
 }
 
