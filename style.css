@@ -189,3 +189,71 @@ footer {
     margin: 1.5rem 0rem 0rem 0rem;
     font-size: 0.75rem;
 }
+
+@media (max-width: 636px) {
+    #tree-crop {
+        height: 100px;
+        bottom: 250px;
+    }
+
+    #tree-1 {
+        left: -100px;
+        top: 20px;
+    }
+
+    #tree-2 {
+        left: 55px;
+        bottom: 200px;
+    }
+}
+
+@media (max-width: 461px) {
+    #tree-crop {
+        height: 100px;
+        bottom: 250px;
+    }
+
+    #tree-1 {
+        left: -68px;
+        top: 20px;
+    }
+
+    #tree-2 {
+        left: 25px;
+        bottom: 200px;
+    }
+}
+
+@media (max-width: 421px) {
+    #tree-crop {
+        height: 100px;
+        bottom: 250px;
+    }
+
+    #tree-1 {
+        left: -50px;
+        top: 20px;
+    }
+
+    #tree-2 {
+        left: 10px;
+        bottom: 200px;
+    }
+}
+
+@media (max-width: 382px) {
+    #tree-crop {
+        height: 100px;
+        bottom: 250px;
+    }
+
+    #tree-1 {
+        left: -40px;
+        top: 20px;
+    }
+
+    #tree-2 {
+        left: 0px;
+        bottom: 200px;
+    }
+}
