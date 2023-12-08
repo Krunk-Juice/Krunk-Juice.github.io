@@ -1,3 +1,3 @@
 # Landing Page
 
-A landing page for Krunk-Juice.github.io
+A landing page for Krunk-Juice.github.io.
