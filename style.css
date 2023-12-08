@@ -197,7 +197,7 @@ footer {
     font-size: 0.75rem;
 }
 
-@media (min-width: 462px) and (max-width: 636px) {
+@media (max-width: 636px) {
     #tree-crop {
         height: 100px;
         bottom: 250px;
@@ -214,7 +214,7 @@ footer {
     }
 }
 
-@media (min-width: 422px) and (max-width: 461px) {
+@media (max-width: 471px) {
     #tree-crop {
         height: 100px;
         bottom: 250px;
@@ -231,7 +231,7 @@ footer {
     }
 }
 
-@media (min-width: 383px) and (max-width: 421px) {
+@media (max-width: 421px) {
     #tree-crop {
         height: 100px;
         bottom: 250px;
