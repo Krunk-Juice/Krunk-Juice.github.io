@@ -43,7 +43,7 @@ body {
     border-radius: 25px;
     border: none;
     padding: 12.5px;
-    font-family: 'Instrument Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 11pt;
     text-transform: uppercase;
 }
@@ -178,12 +178,12 @@ h1 {
 }
 
 h2 {
-    font-family: 'Instrument Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 2.25rem;
 }
 
 h3 {
-    font-family: 'Instrument Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 p {
