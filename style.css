@@ -43,7 +43,6 @@ body {
     border-radius: 25px;
     border: none;
     padding: 12.5px;
-    font-family: 'Inter', sans-serif;
     font-size: 11pt;
     text-transform: uppercase;
 }
@@ -183,6 +182,10 @@ h2 {
 }
 
 h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
     font-family: 'Inter', sans-serif;
 }
 
