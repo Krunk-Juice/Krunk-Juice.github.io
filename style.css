@@ -200,6 +200,16 @@ h3 {
     font-family: 'Inter', sans-serif;
 }
 
+hr {
+    border: dotted;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 5%;
+    border-width: 0.4rem;
+    border-color: #0D3A33;
+}
+
 a {
     font-family: 'Inter', sans-serif;
 }
