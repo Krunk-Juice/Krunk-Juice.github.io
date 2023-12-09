@@ -37,6 +37,17 @@ body {
     padding: 3rem 0rem 0rem 0rem;
 }
 
+.container-3 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-3 > div > svg {
+    padding-right: 0.2rem;
+}
+
 .button {
     background: linear-gradient(#66BFBF, #146458);
     color: #EAF6F6;
@@ -193,6 +204,10 @@ p {
     font-family: 'Lora', serif;
     color: #EAF6F6;
 }
+
+svg path {
+    fill: #66BFBF;
+ }
 
 footer {
     grid-column: span 4;
