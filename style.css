@@ -44,9 +44,9 @@ body {
     align-items: center;
 }
 
-.container-3 > div > svg {
-    padding-right: 0.2rem;
-    padding-bottom: 0.05rem;
+.container-3 > div > a {
+    padding-right: 0.1rem;
+    padding-top: 0.165rem;
 }
 
 .button {
