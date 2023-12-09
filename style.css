@@ -46,6 +46,7 @@ body {
 
 .container-3 > div > svg {
     padding-right: 0.2rem;
+    padding-bottom: 0.05rem;
 }
 
 .button {
