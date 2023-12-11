@@ -60,13 +60,30 @@ body {
     font-size: 12pt;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+    position: relative;
+    z-index: 0;
 }
 
-.button:hover {
+.button:before {
+    border-radius: inherit;
     background: linear-gradient(#66BFBF, #1d917f);
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
 }
 
-.button:active {
+.button:hover:before {
+    /* background: linear-gradient(#66BFBF, #1d917f); */
+    opacity: 1;
+}
+
+.button:active:before {
     background: linear-gradient(#66BFBF, #3bbebe);
 }
 
@@ -92,6 +109,14 @@ body {
 
 .green-text {
     color: #66BFBF;
+}
+
+.fade {
+    transition: color 0.5s;
+}
+
+.fade:hover {
+    color: #3bbebe;
 }
 
 #tree-1 {
@@ -221,7 +246,7 @@ p {
 
 svg path {
     fill: #66BFBF;
- }
+}
 
 footer {
     grid-column: span 4;
