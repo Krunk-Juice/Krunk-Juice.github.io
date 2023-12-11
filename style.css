@@ -244,8 +244,20 @@ p {
     color: #EAF6F6;
 }
 
-svg path {
+#linkedin svg, #github svg {
     fill: #66BFBF;
+}
+
+#linkedin:hover svg, #linkedin:hover > h3 > a {
+    fill: #3bbebe;
+    color: #3bbebe;
+    transition: fill 0.5s, color 0.5s;
+}
+
+#github:hover svg, #github:hover > h3 > a {
+    fill: #3bbebe;
+    color: #3bbebe;
+    transition: fill 0.5s, color 0.5s;
 }
 
 footer {
