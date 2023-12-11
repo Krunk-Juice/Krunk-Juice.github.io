@@ -34,27 +34,14 @@ body {
 .container-3 {
     background: #0D3A33;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 1fr 1fr;
     row-gap: 2rem;
-    column-gap: 3rem;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 3;
     padding: 3rem 0rem 0rem 0rem;
-}
-
-.container-3 > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-3 > div > a {
-    padding-right: 0.1rem;
-    padding-top: 0.165rem;
 }
 
 .button {
@@ -263,6 +250,18 @@ p {
     color: #EAF6F6;
 }
 
+#linkedin, #github {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#linkedin > a, #github > a {
+    padding-right: 0.1rem;
+    padding-top: 0.165rem;
+}
+
 #linkedin svg, #github svg {
     fill: #66BFBF;
 }
@@ -280,7 +279,7 @@ p {
 }
 
 footer {
-    grid-column: span 4;
+    grid-column: span 2;
     font-size: 0.75rem;
 }
 
