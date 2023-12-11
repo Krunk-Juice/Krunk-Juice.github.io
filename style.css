@@ -34,7 +34,7 @@ body {
 .container-3 {
     background: #0D3A33;
     display: grid;
-    grid-template-columns: 140px 140px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: 1fr 1fr;
     row-gap: 2rem;
     column-gap: 3rem;
@@ -280,7 +280,7 @@ p {
 }
 
 footer {
-    grid-column: span 2;
+    grid-column: span 4;
     font-size: 0.75rem;
 }
 
