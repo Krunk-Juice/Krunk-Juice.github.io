@@ -34,8 +34,8 @@ body {
 .container-3 {
     background: #0D3A33;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 1fr 1fr;
     row-gap: 2rem;
     column-gap: 3rem;
     justify-content: center;
