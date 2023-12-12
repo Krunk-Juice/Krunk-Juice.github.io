@@ -148,24 +148,6 @@ body {
     z-index: 0;
 }
 
-#tree-3 {
-    position: relative;
-    right: 850px;
-    z-index: 0;
-}
-
-#tree-4 {
-    position: relative;
-    right: 925px;
-    z-index: 0;
-}
-
-#tree-5 {
-    position: relative;
-    left: 350px;
-    z-index: 0;
-}
-
 #tree-crop {
     background: #181A1B;
     height: 70px;
