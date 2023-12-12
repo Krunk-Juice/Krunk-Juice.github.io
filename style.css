@@ -111,6 +111,15 @@ body {
     /* z-index: 1; */
 }
 
+#pro {
+    text-decoration: underline;
+}
+
+#title-text:hover #pro {
+    transition: color 0.5s;
+    color: #3bbebe;
+}
+
 .trees {
     height: 166px;
     position: relative;
