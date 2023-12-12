@@ -115,7 +115,7 @@ body {
     text-decoration: underline;
 }
 
-#title-text:hover #pro {
+#title-text > h1:hover ~ h2 > #pro, #title-text > h2:hover #pro {
     transition: color 0.5s;
     color: #3bbebe;
 }
