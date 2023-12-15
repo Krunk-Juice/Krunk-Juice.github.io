@@ -111,6 +111,11 @@ body {
     /* z-index: 1; */
 }
 
+#name {
+    font-family: 'Lora', serif;
+    color: #66BFBF;
+}
+
 #pro {
     text-decoration: underline;
 }
