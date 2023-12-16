@@ -130,7 +130,8 @@ body {
     color: #3bbebe;
 } */
 
-.underline {
+/* Underlining forward & back */
+/* .underline {
     display: inline-block;
     position: relative;
     padding-bottom: 4px;
@@ -149,6 +150,36 @@ body {
 #title-text > h1:hover ~ h2 .underline::after, 
 #title-text > h2:hover .underline::after {
     width: 100%;
+} */
+
+/* Underlining forward */
+.underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+.underline::after {
+    position: absolute;
+    content: "";
+    background: #66BFBF;
+    bottom: 0.2em;
+    /* left: 0; */
+    right: 0;
+    height: 0.085em;
+    transition: 0.3s ease-in-out;
+    width: 0%;
+}
+#title-text > h1:hover ~ h2 .underline::after, 
+#title-text > h2:hover .underline::after {
+    width: 100%;
+}
+#title-text > h1:hover ~ h2 .underline::after, 
+#title-text > h2:hover .underline::after {
+    /* right: 0;
+    left: auto; */
+    right: auto;
+    left: 0;
 }
 
 .trees {
