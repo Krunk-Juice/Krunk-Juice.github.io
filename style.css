@@ -102,7 +102,8 @@ body {
     align-items: center;
     z-index: 1;
     width: 100vw;
-    padding: 5rem 0rem 0rem 0rem;
+    /* Keep title padding */
+    padding: 3rem 0rem 0rem 0rem;
 }
 
 #title-text {
@@ -111,18 +112,39 @@ body {
     /* z-index: 1; */
 }
 
+#title-text > h1 {
+    /* Keep title padding */
+    padding: 2rem;
+
+    background:
+        linear-gradient(currentColor 0 0) 0 0,
+        linear-gradient(currentColor 0 0) 0 0,
+        linear-gradient(currentColor 0 0) 0 100%,
+        linear-gradient(currentColor 0 0) 0 100%,
+        linear-gradient(currentColor 0 0) 100% 0,
+        linear-gradient(currentColor 0 0) 100% 0,
+        linear-gradient(currentColor 0 0) 100% 100%,
+        linear-gradient(currentColor 0 0) 100% 100%;
+    background-size: var(--d, 0) 0.075em, 0.075em var(--d, 0);
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+#title-text > h1:hover {
+    --d: 20px;
+}
+
 #name {
     font-family: 'Lora', serif;
     color: #66BFBF;
 }
 
-#pro {
-    text-decoration: underline;
-}
-
 #name:hover {
     transition: color 0.5s;
     color: #3bbebe;
+}
+
+#pro {
+    text-decoration: underline;
 }
 
 /* #title-text > h1:hover ~ h2 #pro, #title-text > h2:hover #pro {
@@ -297,7 +319,8 @@ body {
 
 h1 {
     font-family: 'Lora', serif;
-    margin: 6rem 0rem 5rem 0rem;
+    /* Keep title margin */
+    margin: 6rem 0rem 3rem 0rem;
     font-size: 4rem;
 }
 
