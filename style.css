@@ -152,7 +152,7 @@ body {
     width: 100%;
 } */
 
-/* Underlining forward */
+/* Underlining left to right */
 .underline {
     display: inline-block;
     position: relative;
@@ -167,7 +167,7 @@ body {
     /* left: 0; */
     right: 0;
     height: 0.085em;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     width: 0%;
 }
 #title-text > h1:hover ~ h2 .underline::after, 
