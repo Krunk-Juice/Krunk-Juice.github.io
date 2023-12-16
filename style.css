@@ -439,6 +439,10 @@ footer {
 }
 
 @media (max-width: 382px) {
+    .underline::after {
+        height: 0.095em;
+    }
+    
     h1 {
         font-size: 3.5rem;
     }
