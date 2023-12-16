@@ -103,34 +103,13 @@ body {
     z-index: 1;
     width: 100vw;
     /* Keep title padding */
-    padding: 3rem 0rem 0rem 0rem;
+    padding: 5rem 0rem 0rem 0rem;
 }
 
 #title-text {
     text-align: center;
     overflow-x: hidden;
     /* z-index: 1; */
-}
-
-#title-text > h1 {
-    /* Keep title padding */
-    padding: 2rem;
-
-    background:
-        linear-gradient(currentColor 0 0) 0 0,
-        linear-gradient(currentColor 0 0) 0 0,
-        linear-gradient(currentColor 0 0) 0 100%,
-        linear-gradient(currentColor 0 0) 0 100%,
-        linear-gradient(currentColor 0 0) 100% 0,
-        linear-gradient(currentColor 0 0) 100% 0,
-        linear-gradient(currentColor 0 0) 100% 100%,
-        linear-gradient(currentColor 0 0) 100% 100%;
-    background-size: var(--d, 0) 0.075em, 0.075em var(--d, 0);
-    background-repeat: no-repeat;
-    transition: 0.5s;
-}
-#title-text > h1:hover {
-    --d: 20px;
 }
 
 #name {
@@ -143,8 +122,24 @@ body {
     color: #3bbebe;
 }
 
-#pro {
+/* #pro {
     text-decoration: underline;
+} */
+
+.underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+.underline::after {
+    position: absolute;
+    content: "";
+    bottom: 0.2em;
+    left: 0.23em;
+    height: 0.085em;
+    background-color: #66BFBF;
+    width: 85%;
 }
 
 /* #title-text > h1:hover ~ h2 #pro, #title-text > h2:hover #pro {
@@ -175,13 +170,13 @@ body {
 } */
 
 /* Underlining left to right */
-.underline {
+.underline-animation {
     display: inline-block;
     position: relative;
     padding-bottom: 4px;
     margin-bottom: 10px;
 }
-.underline::after {
+.underline-animation::after {
     position: absolute;
     content: "";
     background: #66BFBF;
@@ -192,12 +187,12 @@ body {
     transition: 0.5s ease-in-out;
     width: 0%;
 }
-#title-text > h1:hover ~ h2 .underline::after, 
-#title-text > h2:hover .underline::after {
+#title-text > h1:hover ~ h2 .underline-animation::after, 
+#title-text > h2:hover .underline-animation::after {
     width: 100%;
 }
-#title-text > h1:hover ~ h2 .underline::after, 
-#title-text > h2:hover .underline::after {
+#title-text > h1:hover ~ h2 .underline-animation::after, 
+#title-text > h2:hover .underline-animation::after {
     /* right: 0;
     left: auto; */
     right: auto;
@@ -320,7 +315,7 @@ body {
 h1 {
     font-family: 'Lora', serif;
     /* Keep title margin */
-    margin: 6rem 0rem 3rem 0rem;
+    margin: 6rem 0rem 5rem 0rem;
     font-size: 4rem;
 }
 
@@ -438,11 +433,7 @@ footer {
     }
 }
 
-@media (max-width: 382px) {
-    .underline::after {
-        height: 0.095em;
-    }
-    
+@media (max-width: 382px) {    
     h1 {
         font-size: 3.5rem;
     }
