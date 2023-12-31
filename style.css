@@ -202,7 +202,7 @@ body {
 .trees {
     height: 166px;
     position: relative;
-    /* margin-top: 3rem; */
+    /* Keep trees margin */
     margin-top: 26rem;
     overflow: hidden;
     z-index: 1;
