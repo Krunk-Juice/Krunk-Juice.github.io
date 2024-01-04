@@ -34,10 +34,10 @@ body {
 .container-3 {
     background: #0D3A33;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     row-gap: 2rem;
-    column-gap: 3rem;
+    column-gap: 12rem;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -361,6 +361,12 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 34.635px;
+}
+
+#github {
+    /* GitHub footer link centering */
+    margin-right: 7.739px;
 }
 
 #linkedin > a, #github > a {
@@ -391,6 +397,10 @@ footer {
 }
 
 @media (max-width: 636px) {
+    .container-3 {
+        column-gap: 8rem;
+    }
+
     #tree-crop {
         height: 100px;
         bottom: 250px;
@@ -412,6 +422,10 @@ footer {
 }
 
 @media (max-width: 471px) {
+    .container-3 {
+        column-gap: 5rem;
+    }
+
     #tree-crop {
         height: 100px;
         bottom: 250px;
@@ -429,6 +443,10 @@ footer {
 }
 
 @media (max-width: 421px) {
+    .container-3 {
+        column-gap: 4rem;
+    }
+
     #tree-crop {
         height: 100px;
         bottom: 250px;
@@ -445,7 +463,11 @@ footer {
     }
 }
 
-@media (max-width: 382px) {    
+@media (max-width: 382px) {  
+    .container-3 {
+        column-gap: 3rem;
+    }
+    
     h1 {
         font-size: 3.5rem;
     }
