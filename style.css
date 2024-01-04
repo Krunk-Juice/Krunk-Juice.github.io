@@ -81,11 +81,11 @@ body {
     background: linear-gradient(#66BFBF, #3bbebe);
 }
 
-.left-stars {
+.left-decorations {
     overflow-x: hidden;
 }
 
-.right-stars {
+.right-decorations {
     position: relative;
     float: right;
 }
@@ -242,9 +242,10 @@ body {
 }
 
 #moon {
+    position: absolute;
     padding: 0;
     top: -5rem;
-    left: -8rem;
+    left: 28rem;
     transform: scale(2);
 }
 
@@ -404,6 +405,10 @@ footer {
         left: 55px;
         bottom: 200px;
     }
+
+    #moon {
+        left: 10rem;
+    }
 }
 
 @media (max-width: 471px) {
@@ -462,5 +467,9 @@ footer {
     #tree-2 {
         left: 0px;
         bottom: 200px;
+    }
+
+    #moon {
+        left: 7rem;
     }
 }
