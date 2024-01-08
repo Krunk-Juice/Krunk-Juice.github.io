@@ -99,13 +99,19 @@ body {
     float: right;
 }
 
-.hidden-decorations > .moon, .left-hidden-decorations, .right-hidden-decorations {
-    opacity: 0;
+
+.hidden-decorations > .moon {
     z-index: 1;
+    opacity: 0;
     transition: opacity 0.5s ease-out;
 }
-
-.hidden-decorations > .moon:hover,
+.left-hidden-decorations, .right-hidden-decorations {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+.hidden-decorations > .moon:hover {
+    opacity: 1;
+}
 .hidden-decorations > .moon:hover ~ .left-hidden-decorations,
 .hidden-decorations > .moon:hover ~ .right-hidden-decorations
 {
@@ -223,7 +229,7 @@ body {
     /* Keep trees margin */
     margin-top: 26rem;
     overflow: hidden;
-    z-index: 1;
+    z-index: 2;
 }
 
 .flip {
@@ -242,13 +248,11 @@ body {
 #tree-1 {
     position: relative;
     left: 40px;
-    z-index: 0;
 }
 
 #tree-2 {
     position: relative;
     left: -25px;
-    z-index: 0;
 }
 
 #tree-crop {
@@ -261,6 +265,7 @@ body {
 
 .moon {
     position: absolute;
+    overflow-x: hidden;
     padding: 0;
     top: -5rem;
     left: 28rem;
