@@ -90,8 +90,26 @@ body {
     float: right;
 }
 
-.star {
-    z-index: 0;
+.left-hidden-decorations {
+    overflow-x: hidden;
+}
+
+.right-hidden-decorations {
+    position: relative;
+    float: right;
+}
+
+.hidden-decorations > .moon, .left-hidden-decorations, .right-hidden-decorations {
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.hidden-decorations > .moon:hover,
+.hidden-decorations > .moon:hover ~ .left-hidden-decorations,
+.hidden-decorations > .moon:hover ~ .right-hidden-decorations
+{
+    opacity: 1;
 }
 
 .parallaxed {
@@ -241,7 +259,7 @@ body {
     bottom: 50px;
 }
 
-#moon {
+.moon {
     position: absolute;
     padding: 0;
     top: -5rem;
@@ -249,42 +267,42 @@ body {
     transform: scale(2);
 }
 
-#star-1 {
+.star-1 {
     position: absolute;
     height: 30px;
     left: 75px;
     top: 75px;
 }
 
-#star-2 {
+.star-2 {
     position: absolute;
     height: 40px;
     left: 250px;
     top: 215px;
 }
 
-#star-3 {
+.star-3 {
     position: absolute;
     height: 15px;
     left: 150px;
     top: 425px;
 }
 
-#star-4 {
+.star-4 {
     position: absolute;
     height: 10px;
     top: 5px;
     right: 155px;
 }
 
-#star-5 {
+.star-5 {
     position: absolute;
     height: 35px;
     right: 280px;
     top: 155px;
 }
 
-#star-6 {
+.star-6 {
     position: absolute;
     height: 20px;
     right: 78px;
@@ -416,7 +434,7 @@ footer {
         bottom: 200px;
     }
 
-    #moon {
+    .moon {
         left: 10rem;
     }
 }
@@ -491,7 +509,7 @@ footer {
         bottom: 200px;
     }
 
-    #moon {
+    .moon {
         left: 7rem;
     }
 }
