@@ -379,6 +379,11 @@ p {
     overflow: hidden;
 }
 
+p > a {
+    font-family: 'Lora', serif;
+    color: #EAF6F6;
+}
+
 #linkedin, #github {
     display: flex;
     flex-direction: row;
